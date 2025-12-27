@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCare Clean Srls</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+        header { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
+        nav { text-align: center; margin: 20px; }
+        nav button { margin: 5px; padding: 10px 20px; cursor: pointer; }
+        section { padding: 20px; background: white; margin: 20px; border-radius: 10px; }
+        h2 { color: #1a1a1a; }
+        footer { text-align: center; padding: 20px; background: #1a1a1a; color: white; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CarCare Clean Srls</h1>
+    <p>Servizi professionali di pulizia e sanificazione auto</p>
+</header>
+
+<nav>
+    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+</nav>
+
+<section id="about">
+    <h2>Chi siamo</h2>
+    <p>CarCare Clean Srls offre servizi professionali di pulizia, igienizzazione e cura dell’auto a Busnago (MB).</p>
+</section>
+
+<section id="services">
+    <h2>Servizi</h2>
+    <ul>
+        <li>Lavaggio interno completo</li>
+        <li>Igienizzazione e sanificazione</li>
+        <li>Trattamento sedili e plastiche</li>
+        <li>Lavaggio esterno professionale</li>
+    </ul>
+</section>
+
+<section id="prices">
+    <h2>Prezzi</h2>
+    <ul>
+        <li>Lavaggio interno: 40€</li>
+        <li>Sanificazione: 30€</li>
+        <li>Lavaggio esterno: 20€</li>
+        <li>Pacchetto completo: 80€</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contatti</h2>
+    <p>Indirizzo: Via del Commercio 62/64, Busnago (MB)</p>
+    <p>Telefono: +39 351 571 9484</p>
+    <p>Email: carcareclean.srls@gmail.com</p>
+</section>
+
+<footer>
+    © 2025 CarCare Clean Srls - Tutti i diritti riservati
+</footer>
+
+<script>
+function setLanguage(lang) {
+    if (lang === 'en') {
+        document.getElementById('about').innerHTML = "<h2>About Us</h2><p>CarCare Clean Srls offers professional car cleaning and sanitization services in Busnago (MB).</p>";
+        document.getElementById('services').innerHTML = "<h2>Services</h2><ul><li>Full interior cleaning</li><li>Sanitization</li><li>Seat and plastic treatment</li><li>Professional exterior wash</li></ul>";
+        document.getElementById('prices').innerHTML = "<h2>Prices</h2><ul><li>Interior cleaning: €40</li><li>Sanitization: €30</li><li>Exterior wash: €20</li><li>Full package: €80</li></ul>";
+        document.getElementById('contact').innerHTML = "<h2>Contact</h2><p>Address: Via del Commercio 62/64, Busnago (MB)</p><p>Phone: +39 351 571 9484</p><p>Email: carcareclean.srls@gmail.com</p>";
+    } else {
+        location.reload();
+    }
+}
+</script>
+
+</body>
+</html>
