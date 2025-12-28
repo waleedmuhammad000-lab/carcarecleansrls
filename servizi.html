@@ -11,12 +11,32 @@
       background: #f5f5f5;
       margin: 0;
       padding: 0;
+      color: #222;
     }
 
-    h1, h2 {
-      color: #0a3d62;
+    /* NAVBAR */
+    .navbar {
+      background: #0a3d62;
+      padding: 15px;
+      text-align: center;
+    }
+    .navbar img {
+      height: 45px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
+    /* SEZIONI */
     section {
       padding: 40px 20px;
       max-width: 900px;
@@ -26,34 +46,34 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
+    h1, h2 {
+      color: #0a3d62;
+    }
+
+    .service-box {
+      background: #eef4f7;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      border-left: 6px solid #0a3d62;
+    }
+
+    .service-box h2 {
+      margin-top: 0;
+    }
+
     ul {
       font-size: 18px;
       line-height: 1.8;
-    }
-
-    .navbar {
-      background: #0a3d62;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .navbar a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
+  <img src="logo.jpeg" alt="Logo">
   <a href="index.html">Home</a>
   <a href="chi-siamo.html">Chi Siamo</a>
   <a href="servizi.html">Servizi</a>
@@ -63,30 +83,48 @@
 
 <section>
   <h1>I nostri servizi</h1>
+  <p>Da CarCare Clean offriamo trattamenti professionali per ogni esigenza.  
+  Ogni servizio viene eseguito con prodotti certificati, guanti antigraffio e massima attenzione ai dettagli.</p>
 
-  <h2>🚗 Lavaggio esterno</h2>
-  <p>Rimozione di sporco, insetti, polvere e residui con prodotti professionali.</p>
+  <!-- SERVIZIO 10 EURO -->
+  <div class="service-box">
+    <h2>10€ – Solo Esterno SMART</h2>
+    <p>Il lavaggio ideale per chi vuole un’auto pulita in modo rapido ma professionale.</p>
+    <ul>
+      <li>Applicazione di emolliente per sciogliere lo sporco</li>
+      <li>Pulizia con guanto antigraffio nei punti critici</li>
+      <li>Pulizia dei cerchi con guanto dedicato</li>
+      <li>Risciacquo ad alta pressione prima dell’ingresso nel tunnel</li>
+    </ul>
+  </div>
 
-  <h2>🧽 Pulizia interni</h2>
-  <p>Aspirazione completa, pulizia sedili, plastiche, tappetini e vetri.</p>
+  <!-- SERVIZIO 12 EURO -->
+  <div class="service-box">
+    <h2>12€ – Solo Esterno INTENSIVE</h2>
+    <p>Per chi vuole una pulizia più profonda, soprattutto in caso di fango o sale.</p>
+    <ul>
+      <li>Tutto il pacchetto SMART</li>
+      <li>Alta pressione nel tunnel sopra e sotto scocca</li>
+      <li>Rimozione fango, sale e sporco ostinato sotto il veicolo</li>
+    </ul>
+  </div>
 
-  <h2>🦠 Igienizzazione abitacolo</h2>
-  <p>Sanificazione profonda con prodotti certificati per eliminare batteri e odori.</p>
+  <!-- SERVIZIO 14 EURO -->
+  <div class="service-box">
+    <h2>14€ – PolishWax</h2>
+    <p>Il trattamento completo per protezione e brillantezza della carrozzeria.</p>
+    <ul>
+      <li>Tutto il pacchetto INTENSIVE</li>
+      <li>Applicazione polish protettivo</li>
+      <li>Protezione della carrozzeria</li>
+      <li>Maggiore lucentezza e brillantezza finale</li>
+    </ul>
+  </div>
 
-  <h2>🪣 Pulizia interni profonda</h2>
-  <p>Trattamento completo per sedili, moquette e superfici interne.</p>
-
-  <h2>✨ Lucidatura carrozzeria</h2>
-  <p>Rimozione micrograffi e ripristino brillantezza della carrozzeria.</p>
-
-  <h2>💰 Prezzi</h2>
-  <ul>
-    <li>Lavaggio esterno: da 15€</li>
-    <li>Lavaggio completo: da 35€</li>
-    <li>Pulizia interni profonda: da 50€</li>
-    <li>Igienizzazione abitacolo: da 25€</li>
-  </ul>
 </section>
+
+</body>
+</html>
 
 </body>
 </html>
