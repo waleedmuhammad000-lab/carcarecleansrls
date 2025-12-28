@@ -61,7 +61,7 @@
     /* SEZIONI */
     section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
 
@@ -71,18 +71,36 @@
       color: #0a3d62;
     }
 
+    /* SERVIZI */
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
     }
 
     .service {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .service h3 {
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      color: #0a3d62;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #27ae60;
+      margin-bottom: 15px;
     }
 
     footer {
@@ -139,7 +157,6 @@
   <a href="servizi.html">Servizi</a>
   <a href="galleria.html">Galleria</a>
 
-  <!-- LOGO INSTAGRAM -->
   <a href="https://www.instagram.com/carcareclean_busnago/" 
      style="margin-left:20px; display:inline-flex; align-items:center;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
@@ -233,6 +250,73 @@
   </div>
 </section>
 
+<!-- SERVIZI PRINCIPALI -->
+<section class="services">
+  <h2>I nostri servizi principali</h2>
+
+  <div class="service-grid">
+
+    <!-- SMART COMPLETO -->
+    <div class="service">
+      <h3>SMART COMPLETO</h3>
+      <div class="price">20€</div>
+      <p><strong>Esterno:</strong><br>
+        • Emolliente<br>
+        • Guanto antigraffio<br>
+        • Pulizia cerchi<br>
+        • Risciacquo alta pressione
+      </p>
+      <p><strong>Interno:</strong><br>
+        • Aspirazione completa<br>
+        • Pulizia vetri<br>
+        • Pulizia battute e pannelli<br>
+        • Pulizia cruscotto<br>
+        • Nero gomme<br>
+        • Profumo sanificante
+      </p>
+    </div>
+
+    <!-- INTENSIVE COMPLETO -->
+    <div class="service">
+      <h3>INTENSIVE COMPLETO</h3>
+      <div class="price">22€</div>
+      <p><strong>Esterno (programma INTENSIVE):</strong><br>
+        • Emolliente<br>
+        • Alta pressione sopra e sotto scocca<br>
+        • Rimozione sporco ostinato
+      </p>
+      <p><strong>Interno (come SMART):</strong><br>
+        • Aspirazione completa<br>
+        • Vetri<br>
+        • Battute e pannelli<br>
+        • Cruscotto<br>
+        • Nero gomme<br>
+        • Profumo sanificante
+      </p>
+    </div>
+
+    <!-- POLISH COMPLETO -->
+    <div class="service">
+      <h3>POLISH COMPLETO</h3>
+      <div class="price">24€</div>
+      <p><strong>Esterno (programma POLISH):</strong><br>
+        • Polish protettivo<br>
+        • Lucentezza superiore<br>
+        • Protezione carrozzeria
+      </p>
+      <p><strong>Interno (come SMART + INTENSIVE):</strong><br>
+        • Aspirazione completa<br>
+        • Vetri<br>
+        • Battute e pannelli<br>
+        • Cruscotto<br>
+        • Nero gomme<br>
+        • Profumo sanificante
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <!-- MAPPA GOOGLE -->
 <section>
   <h2>Dove Siamo</h2>
@@ -242,44 +326,6 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.998!2d9.450!3d45.629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDUuNjI5!5e0!3m2!1sit!2sit!4v0000000000"
       width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
     </iframe>
-  </div>
-</section>
-
-<!-- SERVIZI PRINCIPALI -->
-<section class="services">
-  <h2>I nostri servizi principali</h2>
-
-  <div class="service-grid">
-
-    <div class="service">
-      <h3>10€ – Solo Esterno SMART</h3>
-      <p>
-        • Emolliente per sciogliere lo sporco<br>
-        • Guanto antigraffio nei punti critici<br>
-        • Pulizia cerchi con guanto dedicato<br>
-        • Risciacquo ad alta pressione prima del tunnel
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>12€ – Solo Esterno INTENSIVE</h3>
-      <p>
-        Include tutto lo SMART +<br>
-        • Alta pressione nel tunnel sopra e sotto scocca<br>
-        • Rimozione fango, sale e sporco ostinato
-      </p>
-    </div>
-
-    <div class="service">
-      <h3>14€ – PolishWax</h3>
-      <p>
-        Include tutto l’INTENSIVE +<br>
-        • Applicazione polish protettivo<br>
-        • Protezione carrozzeria<br>
-        • Lucentezza superiore
-      </p>
-    </div>
-
   </div>
 </section>
 
