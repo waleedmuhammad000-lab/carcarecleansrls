@@ -24,7 +24,7 @@
       background-image: url('logo.jpeg');
       background-repeat: repeat;
       background-size: 350px;
-      opacity: 0.06; /* effetto elegante */
+      opacity: 0.06;
       z-index: -1;
     }
 
@@ -45,9 +45,6 @@
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
-    }
-    .navbar a:hover {
-      text-decoration: underline;
     }
 
     /* LOGO GRANDE */
@@ -109,10 +106,30 @@
       font-size: 18px;
       line-height: 1.5;
     }
+
+    /* PULSANTE WHATSAPP FISSO */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
   </style>
 </head>
 
 <body>
+
+<!-- PULSANTE WHATSAPP -->
+<a class="whatsapp-btn" href="https://wa.me/393519352362" target="_blank">
+  💬 WhatsApp
+</a>
 
 <!-- NAVBAR -->
 <nav class="navbar">
@@ -176,7 +193,102 @@
     </div>
 
     <div class="why-item">
-      🚗 <strong>
+      🚗 <strong>Tunnel WashTec professionale</strong><br>
+      Qualità tedesca, lavaggio uniforme e risultati eccellenti su ogni veicolo.
+    </div>
+
+    <div class="why-item">
+      💧 <strong>Prelavaggio accurato</strong><br>
+      Emolliente, foam e alta pressione per rimuovere lo sporco prima del tunnel.
+    </div>
+
+  </div>
+</section>
+
+<!-- ORARI DI APERTURA -->
+<section>
+  <h2>Orari di Apertura</h2>
+
+  <div style="
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    max-width:600px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+    text-align:center;
+  ">
+    <p style="font-size:20px; font-weight:bold; color:#0a3d62; margin-bottom:15px;">
+      🕒 Siamo aperti tutti i giorni
+    </p>
+
+    <p><strong>Lunedì – Sabato:</strong> 08:00 – 18:00</p>
+    <p><strong>Domenica:</strong> 08:00 – 13:00</p>
+
+    <p style="margin-top:20px; color:#0a3d62; font-weight:bold;">
+      Vieni quando vuoi, ti aspettiamo!
+    </p>
+  </div>
+</section>
+
+<!-- MAPPA GOOGLE -->
+<section>
+  <h2>Dove Siamo</h2>
+
+  <div style="max-width:900px; margin:auto; border-radius:12px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.998!2d9.450!3d45.629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDUuNjI5!5e0!3m2!1sit!2sit!4v0000000000"
+      width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- SERVIZI PRINCIPALI -->
+<section class="services">
+  <h2>I nostri servizi principali</h2>
+
+  <div class="service-grid">
+
+    <div class="service">
+      <h3>10€ – Solo Esterno SMART</h3>
+      <p>
+        • Emolliente per sciogliere lo sporco<br>
+        • Guanto antigraffio nei punti critici<br>
+        • Pulizia cerchi con guanto dedicato<br>
+        • Risciacquo ad alta pressione prima del tunnel
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>12€ – Solo Esterno INTENSIVE</h3>
+      <p>
+        Include tutto lo SMART +<br>
+        • Alta pressione nel tunnel sopra e sotto scocca<br>
+        • Rimozione fango, sale e sporco ostinato
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>14€ – PolishWax</h3>
+      <p>
+        Include tutto l’INTENSIVE +<br>
+        • Applicazione polish protettivo<br>
+        • Protezione carrozzeria<br>
+        • Lucentezza superiore
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 CarCare Clean Srls – Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
 
 
 
