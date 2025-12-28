@@ -13,6 +13,7 @@
       color: #222;
     }
 
+    /* SFONDO CON LOGO */
     body::before {
       content: "";
       position: fixed;
@@ -27,6 +28,7 @@
       z-index: -1;
     }
 
+    /* NAVBAR */
     .navbar {
       background: #0a3d62;
       padding: 15px;
@@ -45,21 +47,24 @@
       font-weight: bold;
     }
 
+    /* SEZIONI */
     section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
 
     h2 {
       text-align: center;
+      margin-bottom: 20px;
       color: #0a3d62;
     }
 
+    /* GRIGLIA SERVIZI */
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
       margin-top: 30px;
     }
 
@@ -68,8 +73,60 @@
       padding: 25px;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      text-align: center;
       font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .service h3 {
+      text-align: center;
+      color: #0a3d62;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #27ae60;
+      margin-bottom: 15px;
+    }
+
+    /* BADGE MIGLIOR RISULTATO */
+    .badge {
+      background: #0a3d62;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    /* SERVIZI CONVENZIONATI */
+    .conv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .conv-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      font-size: 18px;
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .conv-icon {
+      font-size: 32px;
+      color: #0a3d62;
+      min-width: 40px;
     }
 
     footer {
@@ -84,6 +141,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
   <img src="logo.jpeg" alt="Logo">
   <a href="index.html">Home</a>
@@ -92,13 +150,80 @@
   <a href="galleria.html">Galleria</a>
 </nav>
 
+<!-- PROGRAMMI COMPLETI -->
 <section>
-  <h2>I nostri servizi</h2>
+  <h2>Programmi Completi (Interno + Esterno)</h2>
 
   <div class="service-grid">
 
     <div class="service">
-      <h3>10€ – Solo Esterno SMART</h3>
+      <h3>SMART COMPLETO</h3>
+      <div class="price">20€</div>
+      <p><strong>Esterno:</strong><br>
+        • Emolliente<br>
+        • Guanto antigraffio<br>
+        • Pulizia cerchi<br>
+        • Risciacquo alta pressione
+      </p>
+      <p><strong>Interno:</strong><br>
+        • Aspirazione completa<br>
+        • Vetri<br>
+        • Battute e pannelli<br>
+        • Cruscotto<br>
+        • Nero gomme<br>
+        • Profumo sanificante
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>INTENSIVE COMPLETO</h3>
+      <div class="price">22€</div>
+      <p><strong>Esterno (INTENSIVE):</strong><br>
+        • Emolliente<br>
+        • Alta pressione sopra e sotto scocca<br>
+        • Rimozione sporco ostinato
+      </p>
+      <p><strong>Interno:</strong><br>
+        • Aspirazione completa<br>
+        • Vetri<br>
+        • Battute e pannelli<br>
+        • Cruscotto<br>
+        • Nero gomme<br>
+        • Profumo sanificante
+      </p>
+    </div>
+
+    <div class="service" style="border:3px solid #0a3d62;">
+      <div class="badge">⭐ Miglior Risultato</div>
+      <h3>POLISH COMPLETO</h3>
+      <div class="price">24€</div>
+      <p><strong>Esterno (POLISH):</strong><br>
+        • Polish protettivo<br>
+        • Lucentezza superiore<br>
+        • Protezione carrozzeria
+      </p>
+      <p><strong>Interno:</strong><br>
+        • Aspirazione completa<br>
+        • Vetri<br>
+        • Battute e pannelli<br>
+        • Cruscotto<br>
+        • Nero gomme<br>
+        • Profumo sanificante
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROGRAMMI SOLO ESTERNO -->
+<section>
+  <h2>Programmi Solo Esterno</h2>
+
+  <div class="service-grid">
+
+    <div class="service">
+      <h3>SMART ESTERNO</h3>
+      <div class="price">10€</div>
       <p>
         • Emolliente<br>
         • Guanto antigraffio<br>
@@ -108,21 +233,98 @@
     </div>
 
     <div class="service">
-      <h3>12€ – Solo Esterno INTENSIVE</h3>
+      <h3>INTENSIVE ESTERNO</h3>
+      <div class="price">12€</div>
       <p>
-        • Tutto lo SMART<br>
+        • Emolliente<br>
         • Alta pressione sopra e sotto scocca<br>
         • Rimozione sporco ostinato
       </p>
     </div>
 
     <div class="service">
-      <h3>14€ – PolishWax</h3>
+      <h3>POLISH ESTERNO</h3>
+      <div class="price">14€</div>
       <p>
-        • Tutto l’INTENSIVE<br>
         • Polish protettivo<br>
-        • Lucentezza superiore
+        • Lucentezza superiore<br>
+        • Protezione carrozzeria
       </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LAVAGGIO SEDILI -->
+<section>
+  <h2>Lavaggio Sedili</h2>
+
+  <div class="service" style="max-width:700px; margin:auto;">
+    <h3>Lavaggio Sedili Professionale</h3>
+    <div class="price">A partire da 80€</div>
+
+    <p>
+      • Solo su appuntamento<br>
+      • Disponibile da lunedì a venerdì<br>
+      • Richiede 2–3 ore di lavorazione<br>
+      • È necessario lasciare l’auto<br><br>
+      Il trattamento rimuove macchie, odori e igienizza in profondità i tessuti.
+    </p>
+  </div>
+</section>
+
+<!-- SERVIZI CONVENZIONATI -->
+<section>
+  <h2>Servizi Convenzionati</h2>
+
+  <div class="conv-grid">
+
+    <div class="conv-box">
+      <div class="conv-icon">✨</div>
+      <div>
+        <strong>Lucidatura completa</strong><br>
+        Rinnova la brillantezza della carrozzeria e rimuove micrograffi.
+      </div>
+    </div>
+
+    <div class="conv-box">
+      <div class="conv-icon">💡</div>
+      <div>
+        <strong>Ripristino fari</strong><br>
+        Rende i fari trasparenti e migliora la visibilità notturna.
+      </div>
+    </div>
+
+    <div class="conv-box">
+      <div class="conv-icon">🛡️</div>
+      <div>
+        <strong>Trattamento nanotecnologico</strong><br>
+        Protezione avanzata contro sporco, acqua e agenti atmosferici.
+      </div>
+    </div>
+
+    <div class="conv-box">
+      <div class="conv-icon">❄️</div>
+      <div>
+        <strong>Ricarica aria condizionata</strong><br>
+        Mantiene l’impianto efficiente e l’abitacolo fresco.
+      </div>
+    </div>
+
+    <div class="conv-box">
+      <div class="conv-icon">🔧</div>
+      <div>
+        <strong>Tagliando auto</strong><br>
+        Manutenzione completa con ricambi certificati.
+      </div>
+    </div>
+
+    <div class="conv-box">
+      <div class="conv-icon">🛞</div>
+      <div>
+        <strong>Cambio gomme</strong><br>
+        Montaggio, equilibratura e controllo pressione.
+      </div>
     </div>
 
   </div>
