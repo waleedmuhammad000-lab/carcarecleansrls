@@ -13,6 +13,21 @@
       color: #222;
     }
 
+    /* SFONDO CON LOGO IN TRASPARENZA */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('logo.jpeg');
+      background-repeat: repeat;
+      background-size: 350px;
+      opacity: 0.06; /* effetto elegante */
+      z-index: -1;
+    }
+
     /* NAVBAR */
     .navbar {
       background: #0a3d62;
@@ -80,6 +95,20 @@
       padding: 20px;
       margin-top: 40px;
     }
+
+    /* SEZIONE PERCHÉ SCEGLIERE NOI */
+    .why-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      margin-top: 40px;
+    }
+    .why-item {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -113,7 +142,7 @@
 </div>
 
 <!-- VIDEO WASH TEC -->
-<section style="padding:40px; background:#111; color:white; text-align:center;">
+<section style="padding:40px; background:#111; color:white; text-align:center; border-radius:12px;">
   <h2 style="font-size:32px; margin-bottom:20px;">Lavaggio Tunnel WashTec</h2>
   <p style="font-size:18px; margin-bottom:30px;">
     Guarda il nostro tunnel WashTec in azione.
@@ -130,50 +159,24 @@
   </div>
 </section>
 
-<!-- SERVIZI PRINCIPALI -->
-<section class="services">
-  <h2>I nostri servizi principali</h2>
+<!-- PERCHÉ SCEGLIERE NOI -->
+<section>
+  <h2>Perché scegliere CarCare Clean</h2>
 
-  <div class="service-grid">
+  <div class="why-box">
 
-    <div class="service">
-      <h3>10€ – Solo Esterno SMART</h3>
-      <p>
-        • Emolliente per sciogliere lo sporco<br>
-        • Guanto antigraffio nei punti critici<br>
-        • Pulizia cerchi con guanto dedicato<br>
-        • Risciacquo ad alta pressione prima del tunnel
-      </p>
+    <div class="why-item">
+      🌿 <strong>Prodotti sostenibili AUA</strong><br>
+      Utilizziamo solo detergenti certificati AUA, biodegradabili e sicuri per l’ambiente.
     </div>
 
-    <div class="service">
-      <h3>12€ – Solo Esterno INTENSIVE</h3>
-      <p>
-        Include tutto lo SMART +<br>
-        • Alta pressione nel tunnel sopra e sotto scocca<br>
-        • Rimozione fango, sale e sporco ostinato
-      </p>
+    <div class="why-item">
+      🌀 <strong>Rulli antigraffio WashTec</strong><br>
+      Tecnologia SoftCare: materiali delicati che proteggono la vernice e non graffiano.
     </div>
 
-    <div class="service">
-      <h3>14€ – PolishWax</h3>
-      <p>
-        Include tutto l’INTENSIVE +<br>
-        • Applicazione polish protettivo<br>
-        • Protezione carrozzeria<br>
-        • Lucentezza superiore
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  © 2025 CarCare Clean Srls – Tutti i diritti riservati
-</footer>
-
-</body>
-</html>
+    <div class="why-item">
+      🚗 <strong>
 
 
 
