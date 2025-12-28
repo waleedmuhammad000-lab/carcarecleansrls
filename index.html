@@ -1,234 +1,223 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarCare Clean Srls</title>
-   <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarCare Clean – Lavaggio Auto Professionale a Busnago</title>
+
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #FFFFFF;
-        color: #0A2A43;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
     }
 
     header {
-        background-color: #0A2A43;
-        color: white;
-        padding: 20px;
-        text-align: center;
+      background: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
 
-    header img {
-        width: 200px;
-        margin-bottom: 10px;
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
     }
 
-    h1, h2 {
-        color: #0A2A43;
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .btn-instagram {
+      background: #E1306C;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     section {
-        padding: 20px;
-        background-color: #F2F2F2;
-        margin: 20px;
-        border-radius: 10px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    a.button {
-        display: inline-block;
-        background-color: #1E90FF;
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        margin: 10px 5px;
-        font-size: 18px;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0a3d62;
     }
 
-    a.button:hover {
-        background-color: #0A2A43;
+    .why-us ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+      line-height: 1.8;
     }
-</style>
-    </style>
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .service img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      border-collapse: collapse;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    table td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+    }
+
+    blockquote {
+      background: white;
+      padding: 20px;
+      border-left: 5px solid #0a3d62;
+      margin: 20px 0;
+      font-style: italic;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
 
-<header style="text-align:center;">
-   <img src="logo.jpeg" alt="Logo CarCare Clean" style="width:200px; margin-bottom:10px;">
-    <h1>CarCare Clean Srls</h1>
-    <p>Servizi professionali di autolavaggio e sanificazione</p>
-    
-   <a href="https://wa.me/393512591594" target="_blank" class="button">
-    Contattaci su WhatsApp
-</a>
-
-<a href="https://www.instagram.com/carcareclean_busnago/" target="_blank" class="button" style="background-color:#E1306C;">
-    Seguici su Instagram
-</a>
+<header>
+  <h1>CarCare Clean Srls</h1>
+  <p>Lavaggio Auto Professionale a Busnago</p>
 </header>
 
-<nav>
-    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
-    <button onclick="setLanguage('en')">🇬🇧 English</button>
-</nav>
-
-<section id="about">
-    <h2>Chi siamo</h2>
-    <p>CarCare Clean Srls offre servizi professionali di pulizia, igienizzazione e cura dell’auto a Busnago (MB).</p>
+<section class="hero">
+  <h1>La tua auto come nuova</h1>
+  <p>Pulizia, igienizzazione e cura professionale dell’auto.</p>
+  <a href="https://wa.me/393512591594" class="btn-whatsapp">Prenota ora su WhatsApp</a>
 </section>
 
-<section id="prices">
-    <h2>Prezzi</h2>
-    <ul>
-        <li><strong>Lavaggio completo:</strong></li>
-        <ul>
-            <li>Smart: 20€</li>
-            <li>Intensive: 22€</li>
-            <li>PolishWax: 24€</li>
-        </ul>
-        <li><strong>Lavaggio dei sedili:</strong> a partire da 80€</li>
-    </ul>
-<section>
-    <h2>Chi Siamo</h2>
-    <p>CarCare Clean Srls è un centro specializzato nella cura e pulizia professionale dell’auto. 
-    Lavoriamo ogni giorno con attenzione, precisione e passione per garantire ai nostri clienti un servizio di alta qualità.</p>
-
-    <p>Offriamo lavaggi interni ed esterni, sanificazioni, trattamenti specifici e cura dei dettagli. 
-    La nostra missione è far tornare ogni veicolo come nuovo, rispettando tempi, esigenze e aspettative dei nostri clienti.</p>
-
-    <p>Ci trovi a Busnago (MB), in Via del Commercio 62/64. 
-    Vieni a trovarci o contattaci su WhatsApp per informazioni e prenotazioni.</p>
-<section>
-    <h2>Servizi Principali</h2>
-
-    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; text-align:center;">
-
-        <div>
-            <div style="font-size:40px;">🚗</div>
-            <h3>Lavaggio Esterno</h3>
-            <p>Pulizia completa della carrozzeria con prodotti professionali.</p>
-        </div>
-
-        <div>
-            <div style="font-size:40px;">🧼</div>
-            <h3>Lavaggio Interno</h3>
-            <p>Aspirazione, pulizia superfici e cura dei dettagli.</p>
-        </div>
-
-        <div>
-            <div style="font-size:40px;">🦠</div>
-            <h3>Sanificazione</h3>
-            <p>Trattamento igienizzante per un ambiente più sicuro.</p>
-        </div>
-
-        <div>
-            <div style="font-size:40px;">🪑</div>
-            <h3>Pulizia Sedili</h3>
-            <p>Lavaggio tessuti e trattamento pelle.</p>
-        </div>
-
-        <div>
-            <div style="font-size:40px;">✨</div>
-            <h3>Lucidatura</h3>
-            <p>Rinnovo della brillantezza della carrozzeria.</p>
-        </div>
-
-        <div>
-            <div style="font-size:40px;">🛡️</div>
-            <h3>Trattamenti Specifici</h3>
-            <p>Protezione vetri, plastiche, cerchi e molto altro.</p>
-        </div>
-
-    </div>
-</section>
-    <section>
-    <h2>Recensioni dei Clienti</h2>
-
-    <div style="margin-bottom:20px;">
-        <p><strong>⭐⭐⭐⭐⭐</strong></p>
-        <p><em>“Servizio impeccabile! La mia auto è tornata come nuova. Personale gentile e molto professionale.”</em></p>
-        <p>— Luca R.</p>
-    </div>
-
-    <div style="margin-bottom:20px;">
-        <p><strong>⭐⭐⭐⭐⭐</strong></p>
-        <p><em>“Pulizia profonda e attenzione ai dettagli. Consiglio CarCare Clean a chi vuole un risultato davvero superiore.”</em></p>
-        <p>— Giulia M.</p>
-    </div>
-
-    <div style="margin-bottom:20px;">
-        <p><strong>⭐⭐⭐⭐⭐</strong></p>
-        <p><em>“Ottimo rapporto qualità-prezzo. Veloci, precisi e super disponibili. Tornerò sicuramente.”</em></p>
-        <p>— Marco T.</p>
-    </div>
-<section>
-    <h2>Contattaci</h2>
-    <p>Compila il modulo per richiedere informazioni o prenotare un servizio.</p>
-
-    <form action="mailto:carcarecleanbusnago@gmail.com" method="post" enctype="text/plain" style="display:flex; flex-direction:column; gap:10px; max-width:400px;">
-        
-        <input type="text" name="Nome" placeholder="Il tuo nome" required 
-               style="padding:10px; border-radius:8px; border:1px solid #ccc;">
-
-        <input type="text" name="Telefono" placeholder="Il tuo numero" required 
-               style="padding:10px; border-radius:8px; border:1px solid #ccc;">
-
-        <textarea name="Messaggio" placeholder="Il tuo messaggio" rows="4" required 
-                  style="padding:10px; border-radius:8px; border:1px solid #ccc;"></textarea>
-
-        <button type="submit" 
-                style="background-color:#1E90FF; color:white; padding:12px; border:none; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer;">
-            Invia Richiesta
-        </button>
-
-    </form>
-</section>
-    <h2>Dove Siamo</h2>
-    <p>Ci trovi in: <strong>Via del Commercio 62/64, Busnago (MB)</strong></p>
-
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.040980366934!2d9.450000!3d45.629000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b0e4f0f0f0f%3A0x0000000000000000!2sVia%20del%20Commercio%2062%2F64%2C%20Busnago%20MB!5e0!3m2!1sit!2sit!4v0000000000000"
-        width="100%" 
-        height="300" 
-        style="border:0; border-radius:10px;" 
-        allowfullscreen="" 
-        loading="lazy">
-    </iframe>
-<section>
-    <h2>Orari di Apertura</h2>
-    <p><strong>Lunedì - Sabato:</strong> 08:00 - 18:00</p>
-    <p><strong>Domenica:</strong> 08:00 - 13:00</p>
+<section class="why-us">
+  <h2>Perché scegliere noi</h2>
+  <ul>
+    <li>✔️ Pulizia professionale con prodotti certificati</li>
+    <li>✔️ Igienizzazione profonda dell’abitacolo</li>
+    <li>✔️ Risultati garantiti e attenzione ai dettagli</li>
+    <li>✔️ Servizio rapido e su appuntamento</li>
+  </ul>
 </section>
 
-<section id="contact">
-    <h2>Contatti</h2>
-    <p>Indirizzo: Via del Commercio 62/64, Busnago (MB)</p>
-    <p>Telefono: +39 351 259 1594</p>
-    <p>Email: carcareclean.srls@gmail.com</p>
+<section class="services">
+  <h2>I nostri servizi</h2>
+  <div class="service-grid">
+
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048313.png" alt="Lavaggio esterno">
+      <h3>Lavaggio esterno</h3>
+      <p>Rimozione sporco, insetti e residui con prodotti professionali.</p>
+    </div>
+
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048310.png" alt="Pulizia interni">
+      <h3>Pulizia interni</h3>
+      <p>Aspirazione, pulizia sedili, plastiche e vetri.</p>
+    </div>
+
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048307.png" alt="Igienizzazione">
+      <h3>Igienizzazione</h3>
+      <p>Sanificazione completa dell’abitacolo.</p>
+    </div>
+
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048309.png" alt="Lucidatura">
+      <h3>Lucidatura</h3>
+      <p>Trattamento per ridare brillantezza alla carrozzeria.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>Prezzi</h2>
+  <table>
+    <tr><td>Lavaggio esterno</td><td>da 15€</td></tr>
+    <tr><td>Lavaggio completo</td><td>da 35€</td></tr>
+    <tr><td>Pulizia interni profonda</td><td>da 50€</td></tr>
+    <tr><td>Igienizzazione abitacolo</td><td>da 25€</td></tr>
+  </table>
+</section>
+
+<section class="reviews">
+  <h2>Cosa dicono i nostri clienti</h2>
+  <blockquote>“Servizio impeccabile, auto come nuova!” – Marco R.</blockquote>
+  <blockquote>“Professionali e veloci. Consigliatissimi.” – Laura P.</blockquote>
+  <blockquote>“La mia auto non era così pulita da anni.” – Davide S.</blockquote>
+</section>
+
+<section class="contact">
+  <h2>Contatti</h2>
+  <p><strong>Indirizzo:</strong> Via del Commercio 62/64, Busnago (MB)</p>
+  <p><strong>Orari:</strong> Lun–Sab 9:00–19:00</p>
+
+  <a href="https://wa.me/393512591594" class="btn-whatsapp">Scrivici su WhatsApp</a>
+  <a href="https://www.instagram.com/carcareclean_busnago/" class="btn-instagram">Seguici su Instagram</a>
 </section>
 
 <footer>
-    © 2025 CarCare Clean Srls - Tutti i diritti riservati
+  © 2025 CarCare Clean Srls – Tutti i diritti riservati
 </footer>
 
-<script>
-function setLanguage(lang) {
-    if (lang === 'en') {
-        document.getElementById('about').innerHTML = "<h2>About Us</h2><p>CarCare Clean Srls offers professional car cleaning and sanitization services in Busnago (MB).</p>";
-        document.getElementById('services').innerHTML = "<h2>Services</h2><ul><li>Full interior cleaning</li><li>Sanitization</li><li>Seat and plastic treatment</li><li>Professional exterior wash</li></ul>";
-        document.getElementById('prices').innerHTML = "<h2>Prices</h2><ul><li>Interior cleaning: €40</li><li>Sanitization: €30</li><li>Exterior wash: €20</li><li>Full package: €80</li></ul>";
-        document.getElementById('contact').innerHTML = "<h2>Contact</h2><p>Address: Via del Commercio 62/64, Busnago (MB)</p><p>Phone: +39 351 571 9484</p><p>Email: carcareclean.srls@gmail.com</p>";
-    } else {
-        location.reload();
-    }
-}
-</script>
-
 </body>
-
 </html>
 
 
