@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chi Siamo – CarCare Clean</title>
+  <title>Chi Siamo – CarCare Clean Busnago</title>
 
   <style>
     body {
@@ -13,7 +13,20 @@
       color: #222;
     }
 
-    /* NAVBAR */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('logo.jpeg');
+      background-repeat: repeat;
+      background-size: 350px;
+      opacity: 0.06;
+      z-index: -1;
+    }
+
     .navbar {
       background: #0a3d62;
       padding: 15px;
@@ -31,85 +44,66 @@
       font-size: 18px;
       font-weight: bold;
     }
-    .navbar a:hover {
-      text-decoration: underline;
-    }
 
-    /* SEZIONE PRINCIPALE */
     section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      margin-top: 40px;
     }
 
-    h1, h2 {
+    h2 {
+      text-align: center;
       color: #0a3d62;
     }
 
-    ul {
-      font-size: 18px;
-      line-height: 1.8;
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <img src="logo.jpeg" alt="Logo">
   <a href="index.html">Home</a>
   <a href="chi-siamo.html">Chi Siamo</a>
   <a href="servizi.html">Servizi</a>
   <a href="galleria.html">Galleria</a>
-
-  <!-- LOGO INSTAGRAM -->
-  <a href="https://www.instagram.com/carcareclean_busnago/" 
-     style="margin-left:20px; display:inline-flex; align-items:center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-         alt="Instagram" 
-         style="height:40px;">
-  </a>
 </nav>
 
-<!-- BARRA INSTAGRAM -->
-<div style="background:#ffecec; padding:15px; text-align:center; font-size:18px; font-weight:bold; color:#d63031;">
-  📸 Seguici su Instagram e tagga <span style="color:#0a3d62;">@carcareclean_busnago</span> nei tuoi lavaggi!
-</div>
-
 <section>
-  <h1>Chi Siamo</h1>
-
-  <p>
-    CarCare Clean Srls nasce con l’obiettivo di offrire un servizio di lavaggio auto
-    professionale, accurato e affidabile. Ogni giorno ci impegniamo per garantire ai nostri
-    clienti un’auto pulita, igienizzata e curata nei minimi dettagli.
+  <h2>Chi Siamo</h2>
+  <p style="font-size:18px; line-height:1.6;">
+    CarCare Clean nasce con un obiettivo chiaro: offrire un lavaggio auto 
+    professionale, sicuro e rispettoso dell’ambiente.  
+    Utilizziamo esclusivamente prodotti <strong>AUA</strong>, biodegradabili e certificati, 
+    per garantire un risultato impeccabile senza danneggiare la natura.
   </p>
 
-  <p>
-    Utilizziamo solo prodotti certificati, guanti antigraffio e attrezzature professionali.
-    Ogni veicolo viene trattato con la massima attenzione, come se fosse il nostro.
+  <p style="font-size:18px; line-height:1.6;">
+    Il nostro tunnel <strong>WashTec SoftCare</strong> è dotato di rulli antigraffio 
+    di ultima generazione, progettati per proteggere la vernice e mantenere 
+    la tua auto brillante più a lungo.
   </p>
 
-  <h2>I nostri valori</h2>
-  <ul>
-    <li>✔️ Professionalità e trasparenza</li>
-    <li>✔️ Qualità garantita su ogni servizio</li>
-    <li>✔️ Puntualità e rispetto dei tempi</li>
-    <li>✔️ Cura dei dettagli e attenzione al cliente</li>
-  </ul>
-
-  <h2>Dove siamo</h2>
-  <p>Via del Commercio 62/64, Busnago (MB)</p>
-
-  <iframe 
-    src="https://www.google.com/maps?q=Via%20del%20Commercio%2062%20Busnago&output=embed"
-    width="100%" height="350" style="border:0; border-radius:10px;">
-  </iframe>
+  <p style="font-size:18px; line-height:1.6;">
+    Ogni giorno lavoriamo con passione, cura e attenzione ai dettagli, 
+    offrendo un servizio rapido, preciso e adatto a ogni tipo di veicolo.
+  </p>
 </section>
+
+<footer>
+  © 2025 CarCare Clean Srls – Tutti i diritti riservati
+</footer>
 
 </body>
 </html>
