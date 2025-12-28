@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -58,7 +58,7 @@
       height: auto;
     }
 
-    /* SEZIONI */
+    /* SEZIONI GENERALI */
     section {
       padding: 40px 20px;
       max-width: 1100px;
@@ -86,6 +86,12 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
       font-size: 18px;
       line-height: 1.6;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
     }
 
     .service h3 {
@@ -114,7 +120,7 @@
       text-align: center;
     }
 
-    /* CARD FIDELITY */
+    /* CARD FEDELTÀ */
     .fidelity-box {
       background: #0a3d62;
       color: white;
@@ -124,18 +130,59 @@
       font-size: 20px;
       line-height: 1.6;
       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
-    footer {
-      background: #0a3d62;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+    /* BANNER PROMO CARD */
+    .promo-banner {
+      background:#0a3d62;
+      color:white;
+      padding:25px;
+      text-align:center;
+      font-size:22px;
+      font-weight:bold;
+      border-radius:12px;
+      margin:40px auto 10px auto;
+      max-width:900px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.25);
     }
 
-    /* SEZIONE PERCHÉ SCEGLIERE NOI */
+    /* SEZIONE COME FUNZIONA LA CARD */
+    .card-how {
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+      font-size:18px;
+      line-height:1.7;
+      max-width:900px;
+      margin:20px auto 40px auto;
+    }
+
+    /* BOTTONE PRENOTA ORA */
+    .cta-book {
+      text-align:center;
+      margin: 20px 0 10px 0;
+    }
+    .cta-book a {
+      display:inline-block;
+      background:#0a3d62;
+      color:white;
+      padding:12px 28px;
+      border-radius:30px;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:bold;
+      box-shadow:0 2px 6px rgba(0,0,0,0.25);
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta-book a:hover {
+      background:#063454;
+      transform: translateY(-2px);
+      box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* PERCHÉ SCEGLIERE NOI */
     .why-box {
       background: white;
       padding: 30px;
@@ -147,6 +194,59 @@
       margin-bottom: 20px;
       font-size: 18px;
       line-height: 1.5;
+    }
+
+    /* RECENSIONI */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .review-box {
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+      font-size:16px;
+      line-height:1.6;
+      position:relative;
+    }
+    .review-name {
+      margin-top:10px;
+      font-weight:bold;
+      color:#0a3d62;
+    }
+
+    /* PRIMA & DOPO */
+    .before-after-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+    .before-after-item {
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+      text-align:center;
+      font-size:16px;
+    }
+    .before-after-item img {
+      width:100%;
+      max-height:260px;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:10px;
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
 
     /* PULSANTE WHATSAPP FISSO */
@@ -162,6 +262,24 @@
       text-decoration: none;
       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
       z-index: 999;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .promo-banner {
+        font-size:18px;
+        padding:18px;
+      }
+      .fidelity-box {
+        font-size:17px;
+      }
+      .card-how {
+        font-size:16px;
+      }
+      .cta-book a {
+        font-size:16px;
+        padding:10px 22px;
+      }
     }
   </style>
 </head>
@@ -274,13 +392,31 @@
   </div>
 </section>
 
-<!-- CARD FIDELITY -->
+<!-- CARD FEDELTÀ + BANNER + SPIEGAZIONE -->
 <section>
+
   <div class="fidelity-box">
     💳 <strong>Card Fedeltà – Accumula il 10% di credito</strong><br>
     Scegliendo un programma completo (20€, 22€, 24€) il 10% dell’importo viene caricato sulla tua tessera.<br>
     Dopo vari lavaggi puoi ottenere un <strong>lavaggio omaggio</strong>.
   </div>
+
+  <div class="promo-banner">
+    💳 Risparmia il 10% con la nostra <span style="color:#ffd700;">Card Fedeltà</span> – Attiva subito!
+  </div>
+
+  <div class="card-how">
+    <strong>Come funziona la Card Fedeltà CarCare Clean:</strong><br><br>
+    • Attiva la card direttamente da noi al momento del pagamento.<br>
+    • Ogni volta che scegli un <strong>programma completo</strong> (20€, 22€, 24€) il 10% dell’importo viene trasformato in credito.<br>
+    • Il credito si accumula sulla tessera e potrai usarlo per ottenere <strong>sconti</strong> o un <strong>lavaggio omaggio</strong> dopo un certo numero di lavaggi.<br>
+    • È il modo più conveniente per avere sempre l’auto pulita e protetta.
+  </div>
+
+  <div class="cta-book">
+    <a href="https://wa.me/393519352362" target="_blank">📲 Prenota ora il tuo lavaggio completo</a>
+  </div>
+
 </section>
 
 <!-- SERVIZI COMPLETI -->
@@ -391,6 +527,54 @@
   </div>
 </section>
 
+<!-- PRIMA & DOPO -->
+<section>
+  <h2>Prima & Dopo</h2>
+
+  <div class="before-after-grid">
+    <div class="before-after-item">
+      <img src="prima-dopo-1.jpg" alt="Prima e dopo lavaggio">
+      <strong>Esterno completo</strong><br>
+      Da sporco a brillante in un solo lavaggio.
+    </div>
+    <div class="before-after-item">
+      <img src="prima-dopo-2.jpg" alt="Interni prima e dopo">
+      <strong>Interni sanificati</strong><br>
+      Sedili, cruscotto e pannelli puliti e profumati.
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:15px; font-size:16px;">
+    (Presto aggiungeremo altre foto reali dei nostri lavori.)
+  </p>
+</section>
+
+<!-- RECENSIONI CLIENTI -->
+<section>
+  <h2>Recensioni dei nostri clienti</h2>
+
+  <div class="reviews-grid">
+
+    <div class="review-box">
+      “Lavaggio completo perfetto, interno ed esterno come nuovi.  
+      Personale gentile e tempi rapidi.”
+      <div class="review-name">– Marco R.</div>
+    </div>
+
+    <div class="review-box">
+      “Ottimo rapporto qualità/prezzo. Il tunnel WashTec e i prodotti green 
+      fanno davvero la differenza.”
+      <div class="review-name">– Sara L.</div>
+    </div>
+
+    <div class="review-box">
+      “Ho fatto il Polish Completo: carrozzeria lucida e interni profumati.  
+      Tornerò sicuramente.”
+      <div class="review-name">– Ahmed K.</div>
+    </div>
+
+  </div>
+</section>
+
 <!-- MAPPA GOOGLE -->
 <section>
   <h2>Dove Siamo</h2>
@@ -409,6 +593,7 @@
 
 </body>
 </html>
+
 
 
 
