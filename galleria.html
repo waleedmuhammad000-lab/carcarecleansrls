@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galleria – CarCare Clean Busnago</title>
+  <title>Galleria – CarCare Clean</title>
 
   <style>
     body {
@@ -13,97 +13,167 @@
       color: #222;
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('logo.jpeg');
-      background-repeat: repeat;
-      background-size: 350px;
-      opacity: 0.06;
-      z-index: -1;
-    }
-
-    .navbar {
-      background: #0a3d62;
-      padding: 15px;
+    h2 {
+      color: #0a3d62;
+      font-size: 32px;
       text-align: center;
-    }
-    .navbar img {
-      height: 45px;
-      vertical-align: middle;
-      margin-right: 15px;
-    }
-    .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
+      margin-bottom: 30px;
     }
 
     section {
       padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
     }
 
-    h2 {
-      text-align: center;
-      color: #0a3d62;
-    }
-
-    .gallery {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .gallery img {
+    .grid img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
 
-    footer {
-      background: #0a3d62;
-      color: white;
+    .grid img:hover {
+      transform: scale(1.03);
+    }
+
+    p {
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      margin-top: 10px;
+      font-size: 16px;
     }
   </style>
 </head>
 
 <body>
 
-<nav class="navbar">
-  <img src="logo.jpeg" alt="Logo">
-  <a href="index.html">Home</a>
-  <a href="chi-siamo.html">Chi Siamo</a>
-  <a href="servizi.html">Servizi</a>
-  <a href="galleria.html">Galleria</a>
-</nav>
+<!-- ========================= -->
+<!--     PULIZIA INTERNI       -->
+<!-- ========================= -->
+<section style="background:#f9f9f9;">
+  <h2>Pulizia Interni</h2>
 
-<section>
-  <h2>Galleria</h2>
+  <div class="grid">
 
-  <div class="gallery">
-    <img src="foto1.jpg" alt="Lavaggio">
-    <img src="foto2.jpg" alt="Tunnel WashTec">
-    <img src="foto3.jpg" alt="Interni">
-    <img src="foto4.jpg" alt="Alta pressione">
+    <div>
+      <img src="img/pulizia-1.jpg" alt="Pulizia bocchette aria">
+      <p>Dettaglio bocchette aria con pennello professionale</p>
+    </div>
+
+    <div>
+      <img src="img/pulizia-2.jpg" alt="Aspirazione tappetini">
+      <p>Aspirazione profonda tappetini e moquette</p>
+    </div>
+
+    <div>
+      <img src="img/pulizia-3.jpg" alt="Sedili tessuto">
+      <p>Pulizia sedili in tessuto con estrattore</p>
+    </div>
+
+    <div>
+      <img src="img/pulizia-4.jpg" alt="Trattamento pelle">
+      <p>Trattamento pelle con spazzola e detergente schiumoso</p>
+    </div>
+
   </div>
-
 </section>
 
-<footer>
-  © 2025 CarCare Clean Srls – Tutti i diritti riservati
-</footer>
+<!-- ========================= -->
+<!--       PRIMA & DOPO        -->
+<!-- ========================= -->
+<section style="background:#ffffff;">
+  <h2>Prima & Dopo</h2>
+
+  <div class="grid">
+
+    <div>
+      <img src="img/prima-1.jpg">
+      <img src="img/dopo-1.jpg" style="margin-top:10px;">
+      <p>Pulizia completa interni – risultato impeccabile</p>
+    </div>
+
+    <div>
+      <img src="img/prima-2.jpg">
+      <img src="img/dopo-2.jpg" style="margin-top:10px;">
+      <p>Sedili tessuto – rimozione macchie profonde</p>
+    </div>
+
+    <div>
+      <img src="img/prima-3.jpg">
+      <img src="img/dopo-3.jpg" style="margin-top:10px;">
+      <p>Cruscotto e plastiche – rigenerazione totale</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!--      TUNNEL WASHTEC       -->
+<!-- ========================= -->
+<section style="background:#f9f9f9;">
+  <h2>Tunnel WashTec</h2>
+
+  <div class="grid">
+
+    <div>
+      <img src="img/tunnel-1.jpg">
+      <p>Prelavaggio ad alta pressione</p>
+    </div>
+
+    <div>
+      <img src="img/tunnel-2.jpg">
+      <p>Rulli antigraffio WashTec</p>
+    </div>
+
+    <div>
+      <img src="img/tunnel-3.jpg">
+      <p>Foam attiva – massima protezione</p>
+    </div>
+
+    <div>
+      <img src="img/tunnel-4.jpg">
+      <p>Asciugatura turbo finale</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================= -->
+<!--     SEDILI & PELLE        -->
+<!-- ========================= -->
+<section style="background:#ffffff;">
+  <h2>Sedili & Pelle</h2>
+
+  <div class="grid">
+
+    <div>
+      <img src="img/sedili-1.jpg">
+      <p>Pulizia profonda sedili in tessuto</p>
+    </div>
+
+    <div>
+      <img src="img/sedili-2.jpg">
+      <p>Trattamento pelle con spazzola morbida</p>
+    </div>
+
+    <div>
+      <img src="img/sedili-3.jpg">
+      <p>Rimozione macchie e igienizzazione</p>
+    </div>
+
+    <div>
+      <img src="img/sedili-4.jpg">
+      <p>Rinnovo e protezione pelle</p>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>
